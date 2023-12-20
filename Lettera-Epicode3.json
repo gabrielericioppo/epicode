@@ -1,0 +1,19 @@
+{
+    "lettera": [
+      {
+        "mittente": "Dario_Esposito",
+        "destinatario": "Fausto_Esposito",
+        "data": "06/12/2023",
+        "destinazione": {
+            "citta":"Napoli",
+            "via":"Via_Roma",
+            "civico":"17",
+            "cap":"80130"
+        },
+        "corpo": "Caro Fausto tanti auguri",
+        "firma": "Dario Esposito",
+        "estero": "no"
+        
+      }
+    ]
+}

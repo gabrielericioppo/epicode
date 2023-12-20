@@ -1,0 +1,67 @@
+{
+    "CD": [
+        {
+            "casa_discografica":"Ultimo_records",
+            "artisti":"Ultimo",
+            "anno_pubblicazione":"2023",
+            "categoria":"Pop",
+            "album":"Alba",
+            "canzoni":[
+                {
+                    "numero":1,
+                    "nome":"Alba",
+                    "durata":"3:30"
+                },
+                {
+                    "numero":2,
+                    "nome":"Nuvole_in_testa",
+                    "durata":"2:54"
+                },
+                {
+                    "numero":3,
+                    "nome":"Amare",
+                    "durata": "3:18"
+                },
+                {
+                    "numero":4,
+                    "nome":"Tutto diventa normale",
+                    "durata":"3:16"
+                }
+            ]    
+        },
+        {
+            "casa_discografica":"Honiro_Label",
+            "artisti":"Ultimo",
+            "anno_pubblicazione":"2017",
+            "categoria":"Pop",
+            "album":"Pianeti",
+            "canzoni":[
+                {
+                    "numero":1,
+                    "nome":"Chiave",
+                    "durata":"4:00"
+                },
+                {
+                    "numero":2,
+                    "nome":"Ovunque_tu_sia",
+                    "durata":"3:21"
+                },
+                {
+                    "numero":3,
+                    "nome":"Sabbia",
+                    "durata": "3:38"
+                },
+                {
+                    "numero":4,
+                    "nome":"Pianeti",
+                    "durata":"3:44"
+                },
+                {
+                    "numero":5,
+                    "nome":"Stasera",
+                    "durata":"4:04"
+                }
+            ]    
+        }
+    ]
+}
