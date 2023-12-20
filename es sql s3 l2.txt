@@ -1,0 +1,89 @@
+CREATE TABLE AEROPORTO (
+    Citta VARCHAR(50),
+    Nazione VARCHAR(50),
+    NumPiste INT
+);
+
+-- Inserimento di dati casuali nella tabella AEROPORTO
+INSERT INTO AEROPORTO (Citta, Nazione, NumPiste) VALUES
+('Roma', 'Italia', 3),
+('Parigi', 'Francia', NULL),
+('Londra', 'Regno Unito', 4),
+('Berlino', 'Germania', NULL),
+('Madrid', 'Spagna', 2),
+('Atene', 'Grecia', 1),
+('Amsterdam', 'Olanda', NULL),
+('Lisbona', 'Portogallo', 3),
+('Stoccolma', 'Svezia', NULL),
+('Varsavia', 'Polonia', 2);
+
+
+-- Creazione della tabella VOLO
+CREATE TABLE VOLO (
+    IdVolo varchar(50),
+    GiornoSett VARCHAR(20),
+    CittaPart VARCHAR(50),
+    OraPart TIME,
+    CittaArr VARCHAR(50),
+    OraArr TIME,
+    TipoAereo VARCHAR(50) 
+);
+
+-- Inserimento di dati casuali nella tabella VOLO
+INSERT INTO VOLO (IdVolo, GiornoSett, CittaPart, OraPart, CittaArr, OraArr, TipoAereo) VALUES
+('dvc222', 'Lunedì', 'Torino', '08:00:00', 'Roma', '10:30:00', 'Airbus A320'),
+('fr222', 'Martedì', 'Torino', '12:30:00', 'Parigi', '15:00:00', 'Boeing 737'),
+('zzz333', 'Mercoledì', 'Torino', '16:45:00', 'Londra', '19:15:00', 'Airbus A330'),
+('bc454', 'Giovedì', 'Torino', '09:15:00', 'Berlino', '11:45:00', 'Boeing 747'),
+('AZ274', 'Venerdì', 'Torino', '14:00:00', 'Madrid', '16:30:00', 'Embraer E190'),
+(6, 'Sabato', 'Torino', '18:20:00', 'Atene', '20:50:00', 'Airbus A321'),
+(7, 'Domenica', 'Torino', '10:30:00', 'Amsterdam', '13:00:00', 'Boeing 787'),
+(8, 'Lunedì', 'Roma', '08:00:00', 'Bologna', '10:30:00', 'Airbus A320'),
+(9, 'Martedì', 'Parigi', '12:30:00', 'Torino', '15:00:00', 'Boeing 737'),
+(10, 'Mercoledì', 'Londra', '16:45:00', 'Torino', '19:15:00', 'Airbus A330');
+
+
+SELECT DISTINCT CittaPart
+FROM VOLO
+WHERE CittaArr = 'Bologna';
+
+
+-- Creazione della tabella AEREO
+CREATE TABLE AEREO (
+    TipoAereo VARCHAR(50) PRIMARY KEY,
+    NumPasseggeri INT,
+    QtaMerci INT
+);
+
+-- Inserimento di dati casuali nella tabella AEREO
+INSERT INTO AEREO (TipoAereo, NumPasseggeri, QtaMerci) VALUES
+('Airbus A320', 150, 1000),
+('Boeing 737', 180, 1200),
+('Airbus A330', 250, 1500),
+('Boeing 747', 400, 2000),
+('Embraer E190', 100, 800),
+('Airbus A321', 200, 1200),
+('Boeing 787', 300, 1800),
+('Bombardier CRJ900', 90, 700),
+('ATR 72', 70, 500),
+('Cessna 172', 4, 100);
+
+
+SELECT Citta
+FROM AEROPORTO
+WHERE NumPiste IS NULL;
+
+
+SELECT DISTINCT TipoAereo
+FROM VOLO
+WHERE CittaPart = 'Torino';
+
+
+SELECT DISTINCT CittaPart
+FROM VOLO
+WHERE CittaArr = 'Bologna';
+
+
+SELECT CittaPart, CittaArr
+FROM VOLO
+WHERE IdVolo = 'AZ274';
